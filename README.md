@@ -10,3 +10,9 @@ settings.
 + tmux configuration
 + osx configuration
 + homebrew packages
+
+## Install
+
+1. `git clone git@github.com:goods92/dotfiles.git`
+1. `cd ~/dotfiles`
+1. `./install.sh`

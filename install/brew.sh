@@ -8,7 +8,11 @@ fi
 echo "Installing homebrew packages..."
 
 # cli tools
+if test ! $(which ack); then
 # brew install ack
+  echo "Installing ack"
+  brew install ack
+fi
 # brew install tree
 # brew install wget
 

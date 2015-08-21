@@ -11,6 +11,9 @@ ZSH_THEME="robbyrussell"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Alias vim to open macvim in the terminal
+alias 'vim'='mvim -v'
+
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 

@@ -1,7 +1,8 @@
 set foldmethod=marker
 " User Interface {{{
 
-color Tomorrow-Night
+set t_Co=256
+colorscheme tomorrow-night
 "Set line numbers 
 :set number
 set nowrap
@@ -9,7 +10,7 @@ set smartindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
-let g:solarized_termcolors=256
+"let g:solarized_termcolors=256
 
 " }}}
 "General Settings {{{

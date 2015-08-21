@@ -9,6 +9,7 @@ call vundle#begin()
 Bundle 'gmarik/vundle'
 
 " Themes
+Bundle 'chriskempson/tomorrow-theme'
 Bundle 'cseelus/sleepwalker-vim'
 Bundle 'ap/vim-css-color'
 Bundle 'chriskempson/base16-vim'

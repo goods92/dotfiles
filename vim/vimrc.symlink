@@ -10,7 +10,6 @@ set smartindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
-"let g:solarized_termcolors=256
 
 " }}}
 "General Settings {{{

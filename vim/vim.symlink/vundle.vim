@@ -2,8 +2,9 @@ set nocompatible
 filetype on
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/vundle.vim/
+"call vundle#rc()
+call vundle#begin()
 
 Bundle 'gmarik/vundle'
 
@@ -19,7 +20,6 @@ Bundle 'w0ng/vim-hybrid'
 Bundle 'pangloss/vim-javascript'
 Bundle 'wavded/vim-stylus'
 Bundle 'othree/html5.vim'
-Bundle 'uggedal/go-vim'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'darthdeus/vim-slim'
 Bundle 'kchmck/vim-coffee-script'
@@ -37,7 +37,6 @@ Bundle 'Raimondi/delimitMate'
 Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/syntastic'
 Bundle 'mileszs/ack.vim'
-Bundle 'ervandew/supertab'
 Bundle 'scrooloose/nerdtree'
 Bundle 'vim-scripts/Align'
 Bundle 'nathanaelkane/vim-indent-guides'
@@ -56,3 +55,4 @@ Bundle "garbas/vim-snipmate"
 Bundle "honza/vim-snippets"
 Bundle "gblock0/snipmate-nodejs"
 Bundle "matthewsimo/angular-vim-snippets"
+call vundle#end()

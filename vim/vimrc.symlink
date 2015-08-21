@@ -1,0 +1,124 @@
+set foldmethod=marker
+" User Interface {{{
+
+color Tomorrow-Night
+"Set line numbers 
+:set number
+set nowrap
+set smartindent
+set tabstop=2
+set shiftwidth=2
+set expandtab
+let g:solarized_termcolors=256
+
+" }}}
+"General Settings {{{
+source ~/.vim/vundle.vim
+source ~/.vim/plugin_config.vim
+source ~/.vim/filetype_settings.vim
+
+let g:session_autoload = 'no'
+set nocompatible
+set modelines=0
+
+:let mapleader = "\\"
+
+"If focus is lost on vim then save file
+au FocusLost * :wa
+
+"strip all trailing whitespace in the current file
+nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
+nnoremap <leader>a :Ack 
+
+"Reselect the text that was just pasted
+nnoremap <leader>v V`]
+
+"Use 'jj' to go back to normal mode from insert mode
+inoremap jj <ESC>
+
+" Stupid shift key fixes
+"cmap W w
+filetype plugin on
+set ofu=syntaxcomplete#Complete
+let g:SuperTabDefaultCompletionType = "context"
+
+"Have rainbow parens always on
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+
+" No annoying sound on errors
+set noerrorbells
+set novisualbell
+set t_vb=
+set tm=500
+
+"Tab key matches bracket pairs
+nnoremap <tab> %
+vnoremap <tab> %
+
+"JavaScript Library Support
+let g:used_javascript_libs = 'underscore, backbone, angularjs, jquery, prelude, node'
+
+" }}}
+" Splitting windows {{{
+"create a new vsplit and switch to it
+nnoremap <leader>w <C-w>v<C-w>l
+
+"create a new split and switch to it
+nnoremap <leader>s <C-w>s<C-w>j
+
+"Change window movement commands
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+" Close the current buffer
+map <leader>bd :Bclose<cr>
+
+" Useful mappings for managing tabs
+map <leader>tn :tabnew<cr>
+map <leader>to :tabonly<cr>
+map <leader>tc :tabclose<cr>
+map <leader>tm :tabmove
+
+" Opens a new tab with the current buffer's path
+" Super useful when editing files in the same directory
+map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
+
+" }}}
+" Plugin Support {{{
+" Hit ctrl+n to open Nerd tree
+map <silent> <C-n> :NERDTreeFocus<CR>
+
+" Function to fix quick-scope highlighting
+function! Quick_scope_selective(movement)
+    let needs_disabling = 0
+    if !g:qs_enable
+        QuickScopeToggle
+        redraw
+        let needs_disabling = 1
+    endif
+
+    let letter = nr2char(getchar())
+
+    if needs_disabling
+        QuickScopeToggle
+    endif
+
+    return a:movement . letter
+endfunction
+
+let g:qs_enable = 0
+
+nnoremap <expr> <silent> f Quick_scope_selective('f')
+nnoremap <expr> <silent> F Quick_scope_selective('F')
+nnoremap <expr> <silent> t Quick_scope_selective('t')
+nnoremap <expr> <silent> T Quick_scope_selective('T')
+vnoremap <expr> <silent> f Quick_scope_selective('f')
+vnoremap <expr> <silent> F Quick_scope_selective('F')
+vnoremap <expr> <silent> t Quick_scope_selective('t')
+vnoremap <expr> <silent> T Quick_scope_selective('T')
+""}}}

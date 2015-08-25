@@ -35,6 +35,7 @@ echo "Configuring zsh as default shell"
 chsh -s $(which zsh)
 
 # symlink the tdev tmux environment to my local bin for running easily
-ln -s ./tdev /usr/local/bin
+ln -s ~/dotfiles/tdev /usr/local/bin/tdev
+echo "Created a symlink for tdev"
 
 echo "Done."

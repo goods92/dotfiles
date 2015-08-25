@@ -1,0 +1,22 @@
+# To run the dotfiles, run the following:
+# brew tap homebrew/bundle # only do this on the first run
+# brew bundle
+
+brew macvim --override-system-vim
+brew git
+brew node
+brew wget
+brew sqlite
+brew ack
+brew gcc46
+brew mercurial
+brew openssl
+brew tmux
+brew rhino
+brew grunt
+brew tree
+brew brew-cask
+brew htop
+brew nginx
+brew nvm
+brew zsh

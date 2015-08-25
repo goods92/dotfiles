@@ -7,8 +7,11 @@ ZSH_THEME="robbyrussell"
 
 export EDITOR='vim'
 
-# Alias vim to open macvim in the terminal
-alias 'vim'='mvim -v'
+# Aliases
+alias 'reload'=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'" # Alias to reload zshrc
+alias 'reload-tmux'='tmux source-file ~/.tmux.conf'
+alias 'zshrc'="vim ~/.zshrc && reload" # Alias to open zshrc in vim and reload when closed
+alias 'vim'='mvim -v' # Alias vim to open macvim in the terminal
 alias 'c'='clear'
 alias 'g'="git"
 alias 'gs'='git status'

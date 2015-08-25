@@ -13,8 +13,6 @@ for config (~/dotfiles/zsh/helpers/*.zsh) source $config
 # Aliases
 alias 'reload-tmux'='tmux source-file ~/.tmux.conf'
 alias 'tdotfiles'='tdev dotfiles ~/dotfiles'
-alias 'g'="git"
-alias 'gs'='git status'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"

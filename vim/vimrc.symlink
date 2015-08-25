@@ -13,6 +13,8 @@ set expandtab
 syntax on
 :set laststatus=2
 
+set clipboard=unnamed
+
 " }}}
 "General Settings {{{
 source ~/.vim/vundle.vim

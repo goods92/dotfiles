@@ -12,6 +12,7 @@ alias 'reload'=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'" # Alias 
 alias 'reload-tmux'='tmux source-file ~/.tmux.conf'
 alias 'zshrc'="vim ~/.zshrc && reload" # Alias to open zshrc in vim and reload when closed
 alias 'vim'='mvim -v' # Alias vim to open macvim in the terminal
+alias 'tdotfiles'='tdev dotfiles ~/dotfiles'
 alias 'c'='clear'
 alias 'g'="git"
 alias 'gs'='git status'

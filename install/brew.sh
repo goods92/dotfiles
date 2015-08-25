@@ -36,4 +36,4 @@ fi
 # brew tap neovim/neovim
 # brew install --HEAD neovim
 
-exit 0
+#exit 0

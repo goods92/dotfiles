@@ -34,4 +34,7 @@ mkdir -p ~/.vim-tmp
 echo "Configuring zsh as default shell"
 chsh -s $(which zsh)
 
+# symlink the tdev tmux environment to my local bin for running easily
+ln -s ./tdev /usr/local/bin
+
 echo "Done."

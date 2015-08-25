@@ -15,9 +15,9 @@ echo " "
 select opt in "${options[@]}"
 do
   case $opt in
-      "New Sessionssion")
+      "New Session")
         read -p "Enter new session name: " SESSION_NAME
-        tmux new            -s "$SESSION_NAME"
+        tmux new -s "$SESSION_NAME"
         break
         ;;
       "zsh")

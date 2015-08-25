@@ -29,6 +29,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'othree/javascript-libraries-syntax.vim'
 Bundle 'jcf/vim-latex'
 Bundle 'gblock0/vim-chino'
+Bundle 'tpope/vim-repeat'
 
 " Utilities
 Bundle 'majutsushi/tagbar'

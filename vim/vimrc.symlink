@@ -40,6 +40,10 @@ nnoremap <leader>v V`]
 "Use 'jj' to go back to normal mode from insert mode
 inoremap jj <ESC>
 
+" Prompt for a command to run map using vimux, command will run in new split
+map <Leader>vp :VimuxPromptCommand<CR>
+map <Leader>vm :VimuxPromptCommand("make ")<CR>"
+
 "Reload vimrc with \r
 nnoremap <leader>r :so $MYVIMRC<CR>
 

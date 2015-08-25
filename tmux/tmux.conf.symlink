@@ -120,6 +120,9 @@ bind -n C-\ if-shell "$is_vim" "send-keys C-\\" "select-pane -l"
 # List of plugins
 set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-sensible'
+set -g @plugin 'tmux-plugins/tmux-yank'
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @plugin 'tmux-plugins/tmux-battery'
 
 source ~/.dotfiles/tmux/theme.sh
 

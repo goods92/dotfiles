@@ -59,5 +59,6 @@ Bundle "gblock0/snipmate-nodejs"
 Bundle "matthewsimo/angular-vim-snippets"
 
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'benmills/vimux'
 
 call vundle#end()

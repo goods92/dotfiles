@@ -38,6 +38,9 @@ nnoremap <leader>v V`]
 "Use 'jj' to go back to normal mode from insert mode
 inoremap jj <ESC>
 
+"Reload vimrc with \r
+nnoremap <leader>r :so $MYVIMRC<CR>
+
 " Stupid shift key fixes
 "cmap W w
 filetype plugin on

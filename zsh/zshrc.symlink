@@ -90,7 +90,7 @@ up(){
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/texbin:/usr/X11/bin
+PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/texbin:/usr/X11/bin:~/dotfiles/bin
 PATH=/Applications/:$PATH
 export PATH="/usr/local/bin:$PATH"
 

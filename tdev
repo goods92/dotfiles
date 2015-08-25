@@ -1,0 +1,21 @@
+#!/bin/zsh
+# Script for creating a new tmux env with name given in first argument
+
+SESSION_NAME=$1
+RBUILD=~/Documents/Programming/thaddius
+RNEWBACK=~/Documents/Programming/thaddius/node_modules
+
+if ! tmux has-session -t $SESSION_NAME; then
+  TMUX= tmux new-session -d -s $SESSION_NAME -n shell -c $RBUILD
+  tmux new-window -t$SESSION_NAME:2 -c $RBUILD
+
+  tmux select-window -t$SESSION_NAME:1
+  tmux send-keys -t$SESSION_NAME:1 "vim" "C-m"
+  tmux split-window -h -t 1 -c $RBUILD
+  tmux split-window -v -c $RBUILD
+  tmux resize-pane -R 30
+
+  tmux select-window -t$SESSION_NAME:1
+fi 
+tmux -2 attach -t $SESSION_NAME
+

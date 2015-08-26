@@ -63,3 +63,12 @@ mkcd () {
  mkdir -p "$*"
  cd "$*"
 }
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+unsetopt correct_all
+
+# Set to this to use case-sensitive completion
+# CASE_SENSITIVE="true"
+
+

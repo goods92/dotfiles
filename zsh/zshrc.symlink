@@ -8,18 +8,8 @@ ZSH_THEME="robbyrussell"
 export EDITOR='vim'
 export CLICOLOR_FORCE=1
 
+# method to pull in all config files from helpers
 for config (~/dotfiles/zsh/helpers/*.zsh) source $config
-
-# Aliases
-alias 'reload-tmux'='tmux source-file ~/.tmux.conf'
-alias 'tdotfiles'='tdev dotfiles ~/dotfiles'
-
-# Set to this to use case-sensitive completion
-# CASE_SENSITIVE="true"
-
-unsetopt correct_all
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 source $ZSH/oh-my-zsh.sh
 

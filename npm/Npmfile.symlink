@@ -1,0 +1,10 @@
+# This is an NPM file
+
+# Update existing
+update
+
+# Modules
+install -g bower
+install -g express
+install -g coffee-script
+install -g sails

@@ -20,3 +20,6 @@ brew htop
 brew nginx
 brew nvm
 brew zsh
+brew cask virtualbox
+brew docker
+brew boot2docker

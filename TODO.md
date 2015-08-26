@@ -1,3 +1,4 @@
 To do:
 
-learn Docker, and then node with Docker
+Learn Docker, and then node with Docker
+Oracle VM VirtualBox

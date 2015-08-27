@@ -5,7 +5,6 @@ alias 'psg'='ps aux | grep -v grep | grep -i -e VSZ -e' # alias to list out ps a
 alias 'history-top10'='history | awk '"'"'{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}'"'"' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl |  head -n10'
 alias 'g11'='g++ -std=c++11' # to compile c++11, use the following: g11 [file.cpp] -o [executable_name]
 alias 'c'='clear'
-alias 'node'='nodemon'
 
 # function to display cd history
 function pd()

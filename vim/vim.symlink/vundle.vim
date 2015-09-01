@@ -57,6 +57,7 @@ Bundle "garbas/vim-snipmate"
 Bundle "honza/vim-snippets"
 Bundle "gblock0/snipmate-nodejs"
 Bundle "matthewsimo/angular-vim-snippets"
+Bundle "burnettk/vim-angular"
 
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'benmills/vimux'

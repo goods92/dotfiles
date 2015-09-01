@@ -24,3 +24,4 @@ brew cask virtualbox
 brew docker
 brew boot2docker
 brew the_silver_searcher
+brew mongodb

@@ -30,6 +30,8 @@ Bundle 'othree/javascript-libraries-syntax.vim'
 Bundle 'jcf/vim-latex'
 Bundle 'gblock0/vim-chino'
 Bundle 'tpope/vim-repeat'
+Bundle 'moll/vim-node'
+Plugin 'elzr/vim-json'
 
 " Utilities
 Bundle 'majutsushi/tagbar'

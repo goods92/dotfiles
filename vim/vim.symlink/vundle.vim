@@ -3,12 +3,11 @@ filetype on
 filetype off
 
 set rtp+=~/.vim/bundle/vundle.vim/
-"call vundle#rc()
 call vundle#begin()
 
 Bundle 'gmarik/vundle'
 
-" Themes
+" UI
 Bundle 'chriskempson/tomorrow-theme'
 Bundle 'cseelus/sleepwalker-vim'
 Bundle 'ap/vim-css-color'
@@ -17,7 +16,7 @@ Bundle 'Lokaltog/vim-distinguished'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'w0ng/vim-hybrid'
 
-" Syntax Plugins
+" Language-Specific Plugins
 Bundle 'pangloss/vim-javascript'
 Bundle 'wavded/vim-stylus'
 Bundle 'othree/html5.vim'
@@ -29,12 +28,14 @@ Bundle 'tpope/vim-rails'
 Bundle 'othree/javascript-libraries-syntax.vim'
 Bundle 'jcf/vim-latex'
 Bundle 'gblock0/vim-chino'
-Bundle 'tpope/vim-repeat'
 Bundle 'moll/vim-node'
 Plugin 'elzr/vim-json'
+Bundle "burnettk/vim-angular"
 
 " Utilities
 Bundle 'majutsushi/tagbar'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-repeat'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'gregsexton/MatchTag'
 Bundle 'Raimondi/delimitMate'
@@ -44,7 +45,6 @@ Bundle 'mileszs/ack.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'vim-scripts/Align'
 Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'tpope/vim-surround'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'kien/ctrlp.vim'
 Bundle 'ervandew/supertab'
@@ -59,8 +59,8 @@ Bundle "garbas/vim-snipmate"
 Bundle "honza/vim-snippets"
 Bundle "gblock0/snipmate-nodejs"
 Bundle "matthewsimo/angular-vim-snippets"
-Bundle "burnettk/vim-angular"
 
+" Tmux stuff
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'benmills/vimux'
 

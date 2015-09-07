@@ -12,6 +12,8 @@ set shiftwidth=2
 set expandtab
 syntax on
 :set laststatus=2
+:set incsearch
+:set cursorline
 
 set clipboard=unnamed
 

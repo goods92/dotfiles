@@ -8,5 +8,6 @@ call vundle#begin()
 
 Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
+Plugin 'mattn/emmet-vim'
 
 call vundle#end()

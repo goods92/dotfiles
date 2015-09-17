@@ -27,7 +27,7 @@ let g:session_autoload = 'no'
 set nocompatible
 set modelines=0
 
-:let mapleader = "\\"
+:let mapleader = "\<Space>"
 
 "If focus is lost on vim then save file
 au FocusLost * :wa

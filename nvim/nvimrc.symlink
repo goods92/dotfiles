@@ -1,0 +1,45 @@
+set foldmethod=marker
+"" User Interface {{{
+
+set t_Co=256
+colorscheme tomorrow-night
+"Set line numbers
+:set number
+set nowrap
+set smartindent
+set tabstop=2
+set shiftwidth=2
+set expandtab
+syntax on
+:set laststatus=2
+:set incsearch
+:set cursorline
+
+set clipboard=unnamed
+" }}}
+"General Settings {{{
+source ~/.nvim/vundle.vim
+
+let g:session_autoload = 'no'
+set nocompatible
+set modelines=0
+
+:let mapleader = "\<Space>"
+
+"If focus is lost on vim then save file
+au FocusLost * :wa
+
+" Use jj instead of escape 
+inoremap jj <ESC> 
+
+"Tab key matches bracket pairs
+nnoremap <tab> %
+vnoremap <tab> %
+
+"JavaScript Library Support
+let g:used_javascript_libs = 'underscore, backbone, angularjs, jquery, prelude, node'
+
+"Nerdtree shortcuts
+map <silent> <C-n> :NERDTreeFocus<CR>
+nmap <leader>n :NERDTree<CR>
+" }}}

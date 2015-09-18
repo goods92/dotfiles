@@ -6,6 +6,8 @@ alias 'history-top10'='history | awk '"'"'{CMD[$2]++;count++;}END { for (a in CM
 alias 'g11'='g++ -std=c++11' # to compile c++11, use the following: g11 [file.cpp] -o [executable_name]
 alias 'c'='clear'
 alias 'ht'='history-top10'
+alias 'b'='brew'
+alias 'rmrf'='rm -rf'
 
 # function to display cd history
 function pd()

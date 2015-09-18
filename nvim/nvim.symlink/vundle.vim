@@ -11,6 +11,6 @@ Bundle 'scrooloose/nerdtree'
 Plugin 'mattn/emmet-vim'
 Bundle 'othree/html5.vim'
 Bundle 'chriskempson/base16-vim'
-
+Bundle 'Shougo/deoplete'
 
 call vundle#end()

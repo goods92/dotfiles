@@ -38,6 +38,9 @@ nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 "Use ack
 nnoremap <leader>a :Ack 
 
+"Nerdtree from leader n
+nnoremap <leader>n :NERDTree<CR>
+
 "Reselect the text that was just pasted
 nnoremap <leader>v V`]
 

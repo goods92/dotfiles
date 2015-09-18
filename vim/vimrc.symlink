@@ -34,6 +34,8 @@ au FocusLost * :wa
 
 "strip all trailing whitespace in the current file
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
+
+"Use ack
 nnoremap <leader>a :Ack 
 
 "Reselect the text that was just pasted
@@ -41,6 +43,9 @@ nnoremap <leader>v V`]
 
 "Use 'jj' to go back to normal mode from insert mode
 inoremap jj <ESC>
+
+"Use space to save
+nnoremap <leader><leader> :w<CR>
 
 " Prompt for a command to run map using vimux, command will run in new split
 map <Leader>vp :VimuxPromptCommand<CR>

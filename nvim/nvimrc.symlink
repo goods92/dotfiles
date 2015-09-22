@@ -22,7 +22,6 @@ set clipboard=unnamed
 source ~/.nvim/vundle.vim
 
 let g:session_autoload = 'no'
-set nocompatible
 set modelines=0
 
 :let mapleader = "\<Space>"
@@ -40,7 +39,37 @@ vnoremap <tab> %
 "JavaScript Library Support
 let g:used_javascript_libs = 'underscore, backbone, angularjs, jquery, prelude, node'
 
+"Change window movement commands
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+" }}}
+" Plugin Support {{{
+
 "Nerdtree shortcuts
 map <silent> <C-n> :NERDTreeFocus<CR>
 nmap <leader>n :NERDTree<CR>
+
+" enable quick_scope conditionally
+let g:qs_enable = 0
+let g:qs_enable_char_list = [ 'f', 'F', 't', 'T' ]
+function! Quick_scope_selective(movement)
+  let needs_disabling = 0
+  if !g:qs_enable
+    QuickScopeToggle
+    redraw!
+    let needs_disabling = 1
+  endif
+  let letter = nr2char(getchar())
+  if needs_disabling
+    QuickScopeToggle
+  endif
+  return a:movement . letter
+endfunction
+" quick_scope maps, operator-pending mode included (can do 'df' with hint)
+for i in g:qs_enable_char_list
+  execute 'noremap <expr> <silent>' . i . " Quick_scope_selective('". i . "')"
+endfor
+
 " }}}

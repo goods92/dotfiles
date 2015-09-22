@@ -12,5 +12,7 @@ Plugin 'mattn/emmet-vim'
 Bundle 'othree/html5.vim'
 Bundle 'chriskempson/base16-vim'
 Bundle 'scrooloose/syntastic'
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'unblevable/quick-scope'
 
 call vundle#end()

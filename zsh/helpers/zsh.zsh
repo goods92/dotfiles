@@ -9,6 +9,7 @@ alias 'ht'='history-top10'
 alias 'b'='brew'
 alias 'rmrf'='rm -rf'
 alias 'dot'='cd ~/dotfiles'
+alias 'a'='alias | grep'
 
 # function to display cd history
 function pd()

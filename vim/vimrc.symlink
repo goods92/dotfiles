@@ -114,6 +114,8 @@ map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
 " Hit ctrl+n to open Nerd tree
 map <silent> <C-n> :NERDTreeFocus<CR>
 
+let g:vim_json_syntax_conceal = 0
+
 " Function to fix quick-scope highlighting
 function! Quick_scope_selective(movement)
     let needs_disabling = 0

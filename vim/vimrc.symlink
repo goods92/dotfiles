@@ -35,6 +35,9 @@ au FocusLost * :wa
 "strip all trailing whitespace in the current file
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
+" map ;; to put a semicolon at the end of the line
+nnoremap ;; A;<Esc>
+
 "Use ack
 nnoremap <leader>a :Ack 
 

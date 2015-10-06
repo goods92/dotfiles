@@ -52,6 +52,7 @@ Bundle 'ervandew/supertab'
 Bundle 'The-NERD-Commenter'
 Bundle 'mattn/emmet-vim'
 Bundle 'unblevable/quick-scope'
+Bundle 'easymotion/vim-easymotion'
 
 "Snipmate stuff
 Bundle "MarcWeber/vim-addon-mw-utils"

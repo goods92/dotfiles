@@ -82,6 +82,10 @@ vnoremap <tab> %
 "JavaScript Library Support
 let g:used_javascript_libs = 'underscore, backbone, angularjs, jquery, prelude, node'
 
+au FileType javascript set dictionary+=$HOME/.vim/dict/node.dict
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+
+set complete+=t
 " }}}
 " Splitting windows {{{
 "create a new vsplit and switch to it

@@ -36,7 +36,7 @@ au FocusLost * :wa
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
 " map ;; to put a semicolon at the end of the line
-nnoremap ;; A;<Esc>
+nnoremap ;; maA;<ESc>`a
 
 "Use ack
 nnoremap <leader>a :Ack 

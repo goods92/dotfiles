@@ -22,3 +22,6 @@ export PATH="/usr/local/bin:$PATH"
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
+
+# alias for updating and reloading everything
+alias "update_all"="upgrade_oh_my_zsh && bubo && bubc"

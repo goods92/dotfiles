@@ -11,6 +11,7 @@ alias 'rmrf'='rm -rf'
 alias 'dot'='cd ~/dotfiles'
 alias 'a'='alias | grep'
 alias 'treenpm'='tree -I node_modules'
+alias 'ndm'='nodemon'
 
 # function to display cd history
 function pd()

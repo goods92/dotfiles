@@ -32,6 +32,7 @@ Plug 'mattn/emmet-vim'
 Plug 'unblevable/quick-scope'
 Plug 'easymotion/vim-easymotion'
 Plug 'bling/vim-airline'
+Plug 'benekastah/neomake'
 
 " Language-Specific Plugins
 Plug 'pangloss/vim-javascript'

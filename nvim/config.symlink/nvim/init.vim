@@ -49,6 +49,9 @@ au FocusLost * :wa
 " Use jj instead of escape 
 inoremap jj <ESC> 
 
+" Use ;; to insert a semicolon at the end 
+nnoremap ;; maA;<ESc>`a
+
 "Tab key matches bracket pairs
 nnoremap <tab> %
 vnoremap <tab> %

@@ -26,3 +26,17 @@ endif
 let g:airline_symbols.branch     = '⎇'
 let g:airline_symbols.readonly   = '∥'
 let g:airline_symbols.linenr = '¶'
+
+"""""""""""""""""""""""""""
+" Neomake
+"""""""""""""""""""""""""""
+if has('autocmd') && !exists('autocommands_loaded')
+  autocmd! BufWritePost * Neomake
+endif
+let g:neomake_javascript_jshint_maker = {
+      \ 'args': ['--verbose'],
+      \ 'errorformat': '%A%f: line %l\, col %v\, %m \(%t%*\d\)',
+      \ }
+let g:neomake_javascript_enabled_markers = ['jshint', 'jscs']
+let g:neomake_open_list=2
+let g:neomake_verbose=0

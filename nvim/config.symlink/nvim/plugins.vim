@@ -1,4 +1,5 @@
 call plug#begin('~/.config/nvim/plugged')
+" Uses vim-plug
 
 " Themes
 Plug 'w0ng/vim-hybrid'                                  " Vim-hybrid theme
@@ -19,7 +20,6 @@ Plug 'kien/rainbow_parentheses.vim'
 Plug 'gregsexton/MatchTag'
 Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-fugitive'
-Plug 'scrooloose/syntastic'
 Plug 'mileszs/ack.vim'
 Plug 'tpope/vim-speeddating'
 Plug 'vim-scripts/Align'

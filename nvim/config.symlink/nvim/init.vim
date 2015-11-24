@@ -1,5 +1,5 @@
 source ~/.config/nvim/plugins.vim
-colorscheme gruvbox
+colorscheme gruvbox "tomorrow-night
 set foldmethod=marker
 
 "" User Interface {{{

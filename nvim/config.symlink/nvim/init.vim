@@ -1,4 +1,5 @@
 source ~/.config/nvim/plugins.vim
+colorscheme gruvbox
 set foldmethod=marker
 
 "" User Interface {{{
@@ -6,7 +7,7 @@ filetype plugin on
 syntax on
 
 set t_Co=256
-colorscheme tomorrow-night
+set background=dark
 "Set line numbers
 :set number
 set nowrap
@@ -78,4 +79,6 @@ for i in g:qs_enable_char_list
   execute 'noremap <expr> <silent>' . i . " Quick_scope_selective('". i . "')"
 endfor
 
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
 " }}}

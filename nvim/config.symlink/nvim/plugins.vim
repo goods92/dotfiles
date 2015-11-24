@@ -31,6 +31,7 @@ Plug 'The-NERD-Commenter'
 Plug 'mattn/emmet-vim'
 Plug 'unblevable/quick-scope'
 Plug 'easymotion/vim-easymotion'
+Plug 'bling/vim-airline'
 
 " Language-Specific Plugins
 Plug 'pangloss/vim-javascript'

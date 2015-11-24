@@ -16,6 +16,8 @@ set expandtab
 :set incsearch
 :set cursorline
 
+let g:deoplete#enable_at_startup = 1
+
 set clipboard=unnamed
 " }}}
 "General Settings {{{

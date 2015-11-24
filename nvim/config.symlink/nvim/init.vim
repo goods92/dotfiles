@@ -1,13 +1,24 @@
 source ~/.config/nvim/plugins.vim
+source ~/.config/nvim/plugin_configs.vim
 colorscheme gruvbox "tomorrow-night
 set foldmethod=marker
 
 "" User Interface {{{
 filetype plugin on
+
+if exists('$TMUX')
+  let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+  let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+else
+  let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+  let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+endif
+
 syntax on
 
 set t_Co=256
 set background=dark
+
 "Set line numbers
 :set number
 set nowrap
@@ -54,10 +65,6 @@ map <C-l> <C-W>l
 
 " Plugin Support {{{
 
-"Nerdtree shortcuts
-map <silent> <C-n> :NERDTreeFocus<CR>
-nmap <leader>n :NERDTree<CR>
-
 " enable quick_scope conditionally
 let g:qs_enable = 0
 let g:qs_enable_char_list = [ 'f', 'F', 't', 'T' ]
@@ -79,6 +86,7 @@ for i in g:qs_enable_char_list
   execute 'noremap <expr> <silent>' . i . " Quick_scope_selective('". i . "')"
 endfor
 
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
+"Nerdtree shortcuts
+map <silent> <C-n> :NERDTreeFocus<CR>
+nmap <leader>n :NERDTree<CR>
 " }}}

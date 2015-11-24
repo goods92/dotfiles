@@ -1,4 +1,6 @@
+source ~/.config/nvim/plugins.vim
 set foldmethod=marker
+
 "" User Interface {{{
 filetype plugin on
 syntax on
@@ -16,12 +18,13 @@ set expandtab
 :set incsearch
 :set cursorline
 
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 let g:deoplete#enable_at_startup = 1
 
 set clipboard=unnamed
 " }}}
+
 "General Settings {{{
-source ~/.nvim/vundle.vim
 
 let g:session_autoload = 'no'
 set modelines=0
@@ -47,6 +50,7 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 " }}}
+
 " Plugin Support {{{
 
 "Nerdtree shortcuts

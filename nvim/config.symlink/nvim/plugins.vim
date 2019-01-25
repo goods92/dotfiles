@@ -32,7 +32,7 @@ Plug 'mattn/emmet-vim'
 Plug 'unblevable/quick-scope'
 Plug 'easymotion/vim-easymotion'
 Plug 'bling/vim-airline'
-Plug 'benekastah/neomake'
+" Plug 'benekastah/neomake'
 
 " Language-Specific Plugins
 Plug 'pangloss/vim-javascript'
@@ -49,6 +49,8 @@ Plug 'gblock0/vim-chino'
 Plug 'moll/vim-node'
 Plug 'elzr/vim-json'
 Plug 'burnettk/vim-angular'
+Plug 'rizzatti/dash.vim'
+Plug 'xuhdev/SingleCompile'
 
 " Snipmate stuff
 Plug 'MarcWeber/vim-addon-mw-utils'

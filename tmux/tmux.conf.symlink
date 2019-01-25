@@ -1,4 +1,4 @@
-set -g default-command "reattach-to-user-namespace -l zsh" #uncomment this out once 10.11 is stable
+set -g default-command "reattach-to-user-namespace -l zsh"
 # tmux display things in 256 colors
 set -g default-terminal "screen-256color"
 set -g status-utf8 on
@@ -80,10 +80,7 @@ bind -r L resize-pane -R 10
 # enable mouse support for switching panes/windows
 # NOTE: This breaks selecting/copying text on OSX
 # To select text as expected, hold Option to disable it (iTerm2)
-setw -g mode-mouse on
-set -g mouse-select-pane on
-set -g mouse-resize-pane on
-set -g mouse-select-window on
+set -g mouse on
 
 # maximizing and restoring windows
 unbind Up

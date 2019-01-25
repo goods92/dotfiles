@@ -5,6 +5,7 @@ echo "Installing dotfiles"
 echo "Initializing submodule(s)"
 git submodule update --init --recursive
 
+# run the symlinks from the install/link.sh folder
 source install/link.sh
 
 if [ "$(uname)" == "Darwin" ]; then
@@ -13,7 +14,7 @@ if [ "$(uname)" == "Darwin" ]; then
     echo "Brewing all the things"
     source install/brew.sh
 
-    echo "Updating OSX settings"
+    echo "Updating macOS settings"
     source installosx.sh
 
     echo "Installing node (from nvm)"

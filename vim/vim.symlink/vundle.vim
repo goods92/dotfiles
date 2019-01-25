@@ -31,6 +31,7 @@ Bundle 'gblock0/vim-chino'
 Bundle 'moll/vim-node'
 Plugin 'elzr/vim-json'
 Bundle "burnettk/vim-angular"
+Bundle 'xuhdev/SingleCompile'
 
 " Utilities
 Bundle 'majutsushi/tagbar'

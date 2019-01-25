@@ -1,6 +1,6 @@
-alias 'vim'='mvim -v'
+alias 'vim'='nvim'
 alias 'v'='mvim -v'
 alias 'n'='nvim'
 alias 'vimrc'='v ~/dotfiles/vim/vimrc.symlink'
-alias 'nvimrc'='n ~/dotfiles/nvim/nvimrc.symlink'
+alias 'nvimrc'='n ~/.config/nvim/init.vim'
 alias 'vundle'='v ~/dotfiles/vim/vim.symlink/vundle.vim'

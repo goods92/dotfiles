@@ -15,6 +15,12 @@ syntax on
 :set incsearch
 :set cursorline
 
+nnoremap <F4> :make!<cr>
+
+" makecpp !g++ -o %< %<cr>
+nmap <F9> :SCCompile<cr>
+nmap <F10> :SCCompileRun<cr>
+
 set clipboard=unnamed
 
 " }}}

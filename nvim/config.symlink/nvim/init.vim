@@ -22,7 +22,7 @@ set background=dark
 "Set line numbers
 :set number
 set nowrap
-set smartindent
+set smartindent " set word wrap to off
 set tabstop=2
 set shiftwidth=2
 set expandtab
@@ -95,5 +95,5 @@ map <silent> <C-n> :NERDTreeFocus<CR>
 nmap <leader>n :NERDTree<CR>
 
 " Auto load NERDTree when opening
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
 " }}}

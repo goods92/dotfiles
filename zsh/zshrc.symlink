@@ -3,9 +3,10 @@ ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
+# ZSH_THEME="robbyrussell"
 
-export EDITOR='vim'
+export EDITOR='nvim'
 export CLICOLOR_FORCE=1
 
 bindkey "^[[A" history-beginning-search-backward
@@ -27,4 +28,5 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
 
 # alias for updating and reloading everything
-alias "ua"="upgrade_oh_my_zsh && echo 'Updating homebrew' && bubo && echo 'Updating packages' && echo 'Cleaning packages' && bubc"
+alias "ua"="echo 'Updating homebrew' && bubo && echo 'Updating packages' && echo 'Cleaning packages' && bubc"
+#alias "ua"="upgrade_oh_my_zsh && echo 'Updating homebrew' && bubo && echo 'Updating packages' && echo 'Cleaning packages' && bubc"

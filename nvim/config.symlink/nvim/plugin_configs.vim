@@ -9,6 +9,7 @@ nnoremap <leader>n :NERDTreeToggle<CR>
 let g:airline_theme             = 'hybrid'
 let g:airline#extensions#syntastic#enabled  = 0
 let g:airline#extensions#whitespace#enabled = 0
+let g:airline_powerline_fonts = 1
 
   let g:airline#extensions#default#layout = [
       \ [ 'a', 'b', 'c' ],

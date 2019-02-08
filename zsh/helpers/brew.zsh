@@ -1,3 +1,4 @@
+alias 'b'-'brew'
 alias 'bl'='brew list'
 alias 'bud'='brew update'
 alias 'bo'='brew outdated'

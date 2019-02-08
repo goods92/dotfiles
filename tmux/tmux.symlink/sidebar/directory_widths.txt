@@ -1,1 +1,3 @@
 /Users/sgoodchild11692	40
+/Users/samgoodchild/dotfiles/tmux	40
+/Users/samgoodchild/dotfiles/tmux/tmux.symlink/plugins	40

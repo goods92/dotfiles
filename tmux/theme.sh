@@ -49,13 +49,16 @@ set-option -g display-panes-colour $tm_color_inactive
 set-window-option -g clock-mode-colour $tm_color_active
 
 tm_spotify="#[fg=$tm_color_music]#(osascript ~/.dotfiles/applescripts/spotify.scpt)"
-tm_itunes="#[fg=$tm_color_music]#(osascript ~/.dotfiles/applescripts/itunes.scpt)"
+tm_itunes="#[fg=$tm_color_music]#(osascript ~/dotfiles/applescripts/itunes.scpt)"
 tm_rdio="#[fg=$tm_color_music]#(osascript ~/.dotfiles/applescripts/rdio.scpt)"
-tm_battery="#(~/.dotfiles/bin/battery_indicator.sh)"
 
-tm_date="#[fg=$tm_color_inactive] %R %d %b"
+tm_date="%a %h-%d %I:%M %p"
 tm_host="#[fg=$tm_color_feature,bold]#h"
 tm_session_name="#[fg=$tm_color_feature,bold]$tm_icon #S"
 
+tm_battery_icon='#{battery_icon}'
+tm_battery_percentage='#{battery_percentage}'
+tm_battery_remain='#{battery_remain}'
+
 set -g status-left $tm_session_name' '
-set -g status-right $tm_itunes' '$tm_rdio' '$tm_spotify' '$tm_date' '$tm_host
+set -g status-right $tm_itunes' '$tm_rdio' '$tm_spotify' '$tm_battery_icon' '$tm_battery_percentage' '$tm_battery_remain' '$tm_host' | '$tm_date

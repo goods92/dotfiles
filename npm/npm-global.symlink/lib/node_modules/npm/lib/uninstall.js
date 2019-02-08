@@ -29,8 +29,8 @@ function uninstall (args, cb) {
   if (args.length === 1 && args[0] === '.') args = []
 
   const where = npm.config.get('global') || !args.length
-            ? path.resolve(npm.globalDir, '..')
-            : npm.prefix
+    ? path.resolve(npm.globalDir, '..')
+    : npm.prefix
 
   args = args.filter(function (a) {
     return path.resolve(a) !== where
@@ -52,7 +52,6 @@ class Uninstaller extends Installer {
   constructor (where, dryrun, args) {
     super(where, dryrun, args)
     this.remove = []
-    this.fakeChildren = false
   }
 
   loadArgMetadata (next) {

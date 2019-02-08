@@ -1,6 +1,7 @@
 call plug#begin('~/.config/nvim/plugged')
 " Uses vim-plug
 
+" Run nvim +PlugInstall from the command line to install all plugins
 " Themes
 Plug 'w0ng/vim-hybrid'                                  " Vim-hybrid theme
 Plug 'kristijanhusak/vim-hybrid-material'               " Vim-hybrid material theme

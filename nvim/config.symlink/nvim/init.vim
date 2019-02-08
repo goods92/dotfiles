@@ -41,6 +41,7 @@ set clipboard=unnamed
 let g:session_autoload = 'no'
 set modelines=0
 
+" Set leader
 :let mapleader = "\<Space>"
 
 "If focus is lost on vim then save file
@@ -92,4 +93,7 @@ endfor
 "Nerdtree shortcuts
 map <silent> <C-n> :NERDTreeFocus<CR>
 nmap <leader>n :NERDTree<CR>
+
+" Auto load NERDTree when opening
+autocmd vimenter * NERDTree
 " }}}

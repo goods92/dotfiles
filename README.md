@@ -1,7 +1,6 @@
 # Dotfiles
 
-This is a collection of my dotfiles created from earlier versions of my
-settings.
+This is a collection of my dotfiles created from earlier versions of my settings.  The install.sh file looks through all folders for .symlink files, and adds them to ~ with a . appended for configuration.
 
 ## Contents
 

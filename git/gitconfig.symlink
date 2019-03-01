@@ -5,6 +5,7 @@
 	ui = true
 [core]
 	excludesfile = /Users/sgoodchild11692/.gitignore_global
+  editor = nvim
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 

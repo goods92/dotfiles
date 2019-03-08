@@ -28,5 +28,5 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
 
 # alias for updating and reloading everything
-alias "ua"="echo 'Updating homebrew' && bubo && echo 'Updating packages' && echo 'Cleaning packages' && bubc"
-#alias "ua"="upgrade_oh_my_zsh && echo 'Updating homebrew' && bubo && echo 'Updating packages' && echo 'Cleaning packages' && bubc"
+alias "ua"="echo 'Updating homebrew' && bubo && echo 'Updating packages' && echo 'Cleaning packages' && bubc && echo 'Updating neovim plugins' && nvim +PlugInstall +qa"
+#alias "ua"="upgrade_oh_my_zsh && echo 'Updating homebrew' && bubo && echo 'Updating packages' && echo 'Cleaning packages' && bubc && echo 'Updating neovim packages' && nvim +PlugUpdate"

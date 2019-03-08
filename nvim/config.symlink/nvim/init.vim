@@ -60,6 +60,9 @@ vnoremap <tab> %
 "JavaScript Library Support
 let g:used_javascript_libs = 'underscore, backbone, angularjs, jquery, prelude, node'
 
+" Do not highlight a search after finding it
+set nohlsearch
+
 "Change window movement commands
 map <C-j> <C-W>j
 map <C-k> <C-W>k

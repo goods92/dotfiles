@@ -6,7 +6,7 @@ nnoremap <leader>n :NERDTreeToggle<CR>
 """"""""""""""""""""
 "  Airline
 """"""""""""""""""""
-let g:airline_theme             = 'hybrid'
+let g:airline_theme = 'hybrid'
 let g:airline#extensions#syntastic#enabled  = 0
 let g:airline#extensions#whitespace#enabled = 0
 let g:airline_powerline_fonts = 1

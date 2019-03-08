@@ -2,7 +2,7 @@
 # brew tap homebrew/bundle # only do this on the first run
 # brew bundle
 
-brew macvim --override-system-vim
+brew nvim --override-system-vim
 brew git
 brew node
 brew wget
@@ -25,3 +25,5 @@ brew docker
 brew boot2docker
 brew the_silver_searcher
 brew mongodb
+brew python3
+brew htop-osx

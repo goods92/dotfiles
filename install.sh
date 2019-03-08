@@ -15,7 +15,7 @@ if [ "$(uname)" == "Darwin" ]; then
     source install/brew.sh
 
     echo "Updating macOS settings"
-    source installosx.sh
+    source install/installosx.sh
 
     echo "Installing node (from nvm)"
     source install/nvm.sh

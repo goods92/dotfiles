@@ -16,6 +16,7 @@ export HOMEBREW_GITHUB_API_TOKEN="542fafd92e1eb43809264c3ad8c191a3e1e0f392"
 # method to pull in all config files from helpers
 for config (~/dotfiles/zsh/helpers/*.zsh) source $config
 
+source $(dirname $(gem which colorls))/tab_complete.sh
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...

@@ -12,6 +12,8 @@ export CLICOLOR_FORCE=1
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
 
+export HOMEBREW_GITHUB_API_TOKEN=542fafd92e1eb43809264c3ad8c191a3e1e0f392
+
 # method to pull in all config files from helpers
 for config (~/dotfiles/zsh/helpers/*.zsh) source $config
 

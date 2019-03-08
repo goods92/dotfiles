@@ -34,6 +34,6 @@ chsh -s $(which zsh)
 # symlink the tdev tmux environment to my local bin for running easily
 ln -s ~/dotfiles/bin/tdev /usr/local/bin/tdev
 # need to write a function that symlinks all files in \bin with /usr/local/bin
-echo "Created a symlink for tdev"
+# echo "Created a symlink for tdev"
 
 echo "Done."

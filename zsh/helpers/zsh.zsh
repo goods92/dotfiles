@@ -1,7 +1,9 @@
 alias 'reload'=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'" # Alias to reload zshrc
+alias 'rl'='reload'
 alias 'hidden'='ls -ld .*'
 alias 'psg'='ps aux | grep -v grep | grep -i -e VSZ -e' # alias to list out ps aux for a process
 alias 'history-top10'='history | awk '"'"'{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}'"'"' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl |  head -n10'
+alias 'history-top20'='history | awk '"'"'{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}'"'"' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl |  head -n20'
 alias 'g11'='g++ -std=c++11' # to compile c++11, use the following: g11 [file.cpp] -o [executable_name]
 alias 'c'='clear'
 alias 'ht'='history-top10'
@@ -13,8 +15,8 @@ alias 'ndm'='nodemon'
 alias 'm'='mongod --dbpath data/db'
 alias 'tmuxrc'="nvim ~/.tmux.conf && tmux source-file ~/.tmux.conf && echo 'TMUX config reloaded'"
 alias 'zshrc'="nvim ~/.zshrc && reload" # Alias to open zshrc in vim and reload when closed
-alias 'l'='colorls -lA --sd'
-alias 'll'='colorls -l1 --sd'
+alias 'll'='colorls -lA --sd'
+alias 'l'='colorls -l1 --sd'
 alias 'cls'='colorls'
 alias 'clsl'='colorls -l'
 alias '..'='cd ..'

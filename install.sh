@@ -28,10 +28,6 @@ if [ "$(uname)" == "Darwin" ]; then
     ln -s ~/.dotfiles/nginx/code.dev /usr/local/etc/nginx/sites-enabled/code.dev
 fi
 
-echo "creating vim directories"
-mkdir -p ~/.vim-tmp
-
-
 echo "Configuring zsh as default shell"
 chsh -s $(which zsh)
 

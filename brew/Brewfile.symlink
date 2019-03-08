@@ -2,28 +2,39 @@
 # brew tap homebrew/bundle # only do this on the first run
 # brew bundle
 
-brew nvim --override-system-vim
-brew git
-brew node
-brew wget
-brew sqlite
-brew ack
-brew gcc46
-brew mercurial
-brew openssl
-brew tmux
-brew rhino
-brew grunt
-brew tree
-brew brew-cask
-brew htop
-brew nginx
-brew nvm
-brew zsh
-brew cask virtualbox
-brew docker
-brew boot2docker
-brew the_silver_searcher
-brew mongodb
-brew python3
-brew htop-osx
+tap "neovim/neovim" #--override-system-vim
+tap "aredridel/iojs"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+brew "ack"
+brew "autoconf"
+brew "automake"
+brew "gettext"
+brew "axel"
+brew "cmake"
+brew "cscope"
+brew "git"
+brew "heroku"
+brew "highlight"
+brew "htop"
+brew "libevent"
+brew "libtool"
+brew "libyaml"
+brew "sqlite"
+brew "xz"
+brew "macvim"
+brew "python@2"
+brew "mongodb"
+brew "neovim"
+brew "nginx"
+brew "nmap"
+brew "nvm"
+brew "pkg-config"
+brew "reattach-to-user-namespace"
+brew "ruby", link: true
+brew "tmux"
+brew "tree"
+brew "utf8proc"
+brew "wget"
+cask "xquartz"

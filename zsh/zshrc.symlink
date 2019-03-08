@@ -4,10 +4,6 @@ ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load. To add custom themes, clone them into the /custom/themes section in oh-my-zsh
 # ZSH_THEME="agnoster"
 ZSH_THEME='powerlevel9k/powerlevel9k'
-POWERLEVEL9K_MODE='nerdfont-complete'
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh dir vcs status)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
-# POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 
 export EDITOR='nvim'
 export CLICOLOR_FORCE=1

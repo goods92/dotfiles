@@ -36,4 +36,8 @@ ln -s ~/dotfiles/bin/tdev /usr/local/bin/tdev
 # need to write a function that symlinks all files in \bin with /usr/local/bin
 # echo "Created a symlink for tdev"
 
+# install colorls
+echo "Installing ColorLS"
+gem install colorls
+
 echo "Done."

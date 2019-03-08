@@ -18,6 +18,7 @@ alias 'cls'='colorls'
 alias 'clsl'='colorls -l'
 alias '..'='cd ..'
 alias '...'='cd ../..'
+alias 'gcm'='git commit -m'
 
 # function to display cd history
 function pd()

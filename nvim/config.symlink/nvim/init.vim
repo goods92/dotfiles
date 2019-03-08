@@ -92,7 +92,7 @@ endfor
 
 "Nerdtree shortcuts
 map <silent> <C-n> :NERDTreeFocus<CR>
-nmap <leader>n :NERDTree<CR>
+nmap <leader>n :NERDTreeToggle<CR>
 
 " Auto load NERDTree when opening
 " autocmd vimenter * NERDTree

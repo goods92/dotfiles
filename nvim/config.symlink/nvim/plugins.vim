@@ -58,6 +58,7 @@ Plug 'garbas/vim-snipmate'
 Plug 'honza/vim-snippets'
 Plug 'gblock0/snipmate-nodejs'
 Plug 'matthewsimo/angular-vim-snippets'
+Plug 'pearofducks/ansible-vim'
 
 " Tmux stuff
 Plug 'christoomey/vim-tmux-navigator'

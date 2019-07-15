@@ -35,6 +35,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'neomake/neomake'
+Plug 'tpope/vim-cucumber'
 
 " Language-Specific Plugins
 Plug 'pangloss/vim-javascript'

@@ -36,6 +36,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'neomake/neomake'
 Plug 'tpope/vim-cucumber'
+Plug 'mikelue/vim-maven-plugin'
 
 " Language-Specific Plugins
 Plug 'pangloss/vim-javascript'

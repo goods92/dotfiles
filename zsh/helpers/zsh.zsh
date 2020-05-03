@@ -15,10 +15,8 @@ alias 'ndm'='nodemon'
 alias 'm'='mongod --dbpath data/db'
 alias 'tmuxrc'="nvim ~/.tmux.conf && tmux source-file ~/.tmux.conf && echo 'TMUX config reloaded'"
 alias 'zshrc'="nvim ~/.zshrc && reload" # Alias to open zshrc in vim and reload when closed
-alias 'll'='colorls -lA --sd'
-alias 'l'='colorls -l1 --sd'
-alias 'cls'='colorls'
-alias 'clsl'='colorls -l'
+alias 'll'='ls -l'
+alias 'l'='ls -la'
 alias '..'='cd ..'
 alias '...'='cd ../..'
 

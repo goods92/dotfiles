@@ -19,6 +19,7 @@ alias 'll'='ls -l'
 alias 'l'='ls -la'
 alias '..'='cd ..'
 alias '...'='cd ../..'
+alias 'p=python3'
 
 # Git aliases
 alias g='git'

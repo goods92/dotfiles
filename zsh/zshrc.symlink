@@ -35,3 +35,19 @@ alias "ua"="echo 'Updating homebrew' && bubo && echo 'Updating packages' && echo
 #alias "ua"="upgrade_oh_my_zsh && echo 'Updating homebrew' && bubo && echo 'Updating packages' && echo 'Cleaning packages' && bubc && echo 'Updating neovim packages' && nvim +PlugUpdate"
 
 export DEFAULT_USER=`whoami`
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/samgoodchild/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/samgoodchild/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/samgoodchild/opt/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/samgoodchild/opt/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
